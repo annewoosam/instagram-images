@@ -1,18 +1,22 @@
 [
 {
 "comment_id":1,
+"channel_name":"annewoosam",
 "image_id":2,
 "comment":"Beautiful Anne - I'm inspired [Heart]",
 "commentator":"kikapierides",
 "replied":"No",
-"date":"2020-04-11"
+"date_posted":"2020-04-11",
+"date_updated":"2020-11-07"
 },
 {
 "comment_id":2,
+"channel_name":"annewoosam",
 "image_id":3,
 "comment":"My little one took this picture",
 "commentator":"annewoosam",
 "replied":"n/a",
-"date":"2020-04-12"	
+"date_posted":"2020-04-12",
+"date_updated":"2020-11-07"	
 }
 ]
