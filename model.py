@@ -58,7 +58,7 @@ class Image(db.Model):
     def __repr__(self):
         return f'<Image Image={self.image_id} channel_name={self.channel_name}>'
         
-   class Instagram_Comment(db.Model):
+class Instagram_Comment(db.Model):
     """A class for Instagram_Comments."""
     
     __tablename__ = 'instagram_comments'

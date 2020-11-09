@@ -31,8 +31,7 @@ with open('data/instagram_channel.json') as f:
 instagram_channel_in_db = []
 
 for instagram_channel in instagram_channel_data:
-    channel_id, channel_name, posts, followers, following, about, first_post_date, date_updated= (
-                                   instagram_channel['channel_id'],
+    channel_name, posts, followers, following, about, first_post_date, date_updated= (
                                    instagram_channel['channel_name'],
                                    instagram_channel['posts'],
                                    instagram_channel['followers'],
@@ -42,7 +41,6 @@ for instagram_channel in instagram_channel_data:
                                    instagram_channel['date_updated'])
 
     db_instagram_channel = crud.create_instagram_channel(
-                                 channel_id,
                                  channel_name,
                                  posts,
                                  followers,
@@ -60,8 +58,7 @@ with open('data/image.json') as f:
 image_in_db = []
 
 for image in image_data:
-    image_id, channel_name, format, image_url, video_views, hearts, comments, tags, date_posted, date_updated= (
-                                   image['image_id'],
+    channel_name, format, image_url, video_views, hearts, comments, tags, date_posted, date_updated= (
                                    image['channel_name'],
                                    image['format'],
                                    image['image_url'],
@@ -73,7 +70,6 @@ for image in image_data:
                                    image['date_updated'])
 
     db_image= crud.create_image(
-                                 image_id,
                                  channel_name,
                                  format,
                                  image_url,
@@ -94,8 +90,7 @@ with open('data/instagram_comment.json') as f:
 instagram_comment_in_db = []
 
 for instagram_comment in instagram_comment_data:
-    comment_id, channel_name, image_id, comment, commentator, replied, date_posted, date_updated= (
-                                   instagram_comment['channel_id'],
+    channel_name, image_id, comment, commentator, replied, date_posted, date_updated= (
                                    instagram_comment['channel_name'],
                                    instagram_comment['image_id'],
                                    instagram_comment['comment'],
@@ -105,7 +100,6 @@ for instagram_comment in instagram_comment_data:
                                    instagram_comment['date_updated'])
 
     db_instagram_comment = crud.create_instagram_comment(
-                                 channel_id,
                                  channel_name,
                                  image_id,
                                  comment,

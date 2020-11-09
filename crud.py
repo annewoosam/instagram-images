@@ -1,6 +1,6 @@
 """CRUD operations."""
 
-from model import db, Instagram_Channel, connect_to_db
+from model import db, Instagram_Channel, Image, Instagram_Comment, connect_to_db
 
 import datetime
 
@@ -27,7 +27,7 @@ def get_instagram_channels():
 
     return Instagram_Channel.query.all()
 
- def create_image(channel_name, format, image_url, video_views, hearts, comments, tags, date_posted, date_updated):
+def create_image(channel_name, format, image_url, video_views, hearts, comments, tags, date_posted, date_updated):
    
 
     image = Image(channel_name=channel_name,
